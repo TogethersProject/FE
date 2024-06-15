@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
+import DaumPostcode from 'react-daum-postcode';
 
 const JoinWrap = styled.div`
   width: 360px;
@@ -63,21 +64,54 @@ const FootLnk = styled.div`
   font-size: 14px;
 `;
 
-const Join = () => {
+const Join: React.FC = () => {
+    const [address, setAddress] = useState('');
+    const [detailAddress, setDetailAddress] = useState('');
+    const [isPostcodeOpen, setIsPostcodeOpen] = useState(false);
+
+    const handleAddressSearch = (data: any) => {
+        setAddress(data.address);
+        setIsPostcodeOpen(false);
+    };
+
+    const togglePostcode = () => {
+        setIsPostcodeOpen(!isPostcodeOpen);
+    };
+
     return (
         <JoinWrap>
             <JoinHtml>
                 <Group>
-                    <Label htmlFor="user-signup">이름</Label>
-                    <Input id="user-signup" type="text" className="input" />
+                    <Label htmlFor="user-signup-name">이름</Label>
+                    <Input id="user-signup-name" type="text" className="input" />
+                </Group>
+                <Group>
+                    <Label htmlFor="user-signup-id">아이디</Label>
+                    <Input id="user-signup-id" type="text" className="input" />
                 </Group>
                 <Group>
                     <Label htmlFor="pass-signup">비밀번호</Label>
-                    <Input id="pass-signup" type="password" className="input" data-type="password" />
+                    <Input id="pass-signup" type="password" className="input" />
                 </Group>
                 <Group>
                     <Label htmlFor="repeat-pass">비밀번호 확인</Label>
-                    <Input id="repeat-pass" type="password" className="input" data-type="password" />
+                    <Input id="repeat-pass" type="password" className="input" />
+                </Group>
+                <Group>
+                    <Label htmlFor="address">주소</Label>
+                    <Input type="text" id="address" value={address} readOnly className="input" />
+                    <button type="button" onClick={togglePostcode}>주소 검색하기</button>
+                    {isPostcodeOpen && <DaumPostcode onComplete={handleAddressSearch} />}
+                </Group>
+                <Group>
+                    <Label htmlFor="detailAddress">상세 주소</Label>
+                    <Input
+                        type="text"
+                        id="detailAddress"
+                        value={detailAddress}
+                        onChange={(e) => setDetailAddress(e.target.value)}
+                        className="input"
+                    />
                 </Group>
                 <Group>
                     <Label htmlFor="email">이메일</Label>
@@ -88,7 +122,7 @@ const Join = () => {
                 </Group>
                 <Hr />
                 <FootLnk>
-                    <a href="/Login">Already Member?</a>
+                    <a href="/login">Already Member?</a>
                 </FootLnk>
             </JoinHtml>
         </JoinWrap>
