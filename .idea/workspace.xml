@@ -8,115 +8,14 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/BUILD_ID" beforeDir="false" afterPath="$PROJECT_DIR$/.next/BUILD_ID" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/build-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/.tsbuildinfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/+CK6DDAKK+CaWf4BVPk8sDa92YiJIPMe1+Tqt0EadiQ=/60.1717986842231.SCi8CcmlnzYlSRbxVYJGMon9oLuK+2u42AlsWM9KYSo=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/-+3Zr3+hSi3xxWmcynsmcKEgOMvPkySAP4TkJIzSfaA=/60.1717745886520.czm2Lb3yWJdgL9Jb61M9A9vAYzlDfo6tqlxK6p0K4WM=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/-x26Ar8-kZ7JVBpZwfdTl1WocOG68Dnm5qikh-arZew=/60.1717719901672.aYGx+gluxNBeXwSC6F4-H6hOIA1i8BKtHPx0oua126k=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/1BbqDy36eQUb3ig7cpKlAVnREASsDGuRnI0HDYYcjv0=/60.1718008038854.aYGx+gluxNBeXwSC6F4-H6hOIA1i8BKtHPx0oua126k=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/1vm-8+yStC3sXpN0PkMKWja7sMo7ZgjUVGn53bdG4bg=/60.1717986842232.5Drx0lL00mxXLV1f2JBegtoPWeXmgKYETnPOtI8dG3g=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/2xPqdX3QAfqNJqDu7+rhsw+VW5j+Qq4ruVNHwk2pSso=/60.1717986842231.-yy5CMDLqU1TbYVhz5wf8GaqXIwMeJjRaDVv0jkE0LA=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/3s7l8FiSPcdjX9WZGUcsWAL5fudOmcrW5Wr7L14T4fE=/60.1717719903235.czm2Lb3yWJdgL9Jb61M9A9vAYzlDfo6tqlxK6p0K4WM=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/5r4FyUbjoHAmlNuxnN7KfNw0Zq9cvpGZAMeDD6vD+rw=/60.1718008073870.3AH7AvRZsLm9SnC4wv7nlG4yWT65yR06ObG5zgXhj1M=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/6GXqjqKMZSUgeK4qRno8WmfMFGnlawSP5z+vksglR3k=/60.1718008073892.gYPJaGyA-ObChubYcsyO1ZyRW3DpGjOYkHPs8h6QKeE=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/9cfgYuSukDEeIgjNpcAIoOo9R5e80XJq0doV+QSjz7A=/60.1717997669391.8oK79BfwI4-o2Vnp2Yq299dNqyMcy1bkdK9OLZl9m2Y=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/A8IU9iz5+1oFNzpngnKP9LaFXUkSa4hwYooXvTaWgu4=/60.1718008073869.-1DYv7V-ssWO98tgK6mzcrzvU3KGZeTCLs5D4gahNt0=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/D8ElEkamzmCJTl1JhMY7RxWjD03fFnLcDbFMICpD7+E=/60.1718008073984.d6pZFKwRTIw5e7VKGhWDJ5JMAbpCUNpMpRezlftazjA=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/DI5X6GzX9RAuJDmzKgNn-B31-iL49krIZFSO2J8MavU=/60.1718008038850.WwT-EkLnT3ZjNDjPE-6pXlAIkbtPi7ue1KOFU5hxoN0=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/GBgcEzxXSBMCaivwUbR-HQ7edVio89AkTXuLRjCp4h4=/60.1717725099554.C3rtDYiYJ5I-rZi7Dp+bd-hE2qjfhXLvON893BVhb5Y=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/Mj+2woJmPTcYzJ69n1Ecd3DEOACquS9On+RcjnY+Jc8=/60.1718008047046.lpGNmaJ+CzH2GL-chvTmjo1rLdp3ShWPHqqhmIpiqfU=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/Ok0VjiSc0c2yf86QJBsWOZ5hHApNtkzE-5UI9QnGO8A=/60.1717725099555.aYGx+gluxNBeXwSC6F4-H6hOIA1i8BKtHPx0oua126k=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/Q3NvySqpgWLnDdFHeiJFw9A+yKIVcZJLL4or7DGlDPQ=/60.1717986842752.G4F7h17xJEULudEQeOsaA9nS6ZMYZsTIx1GpH90Jr4o=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/RGiWvRVC9GihYZm7+DL02iekzMcPnMdwN4buBgR4uQ0=/60.1717986842744.9yyqcyTbGNUbcZy8u8RNjCFYWF3G9txpPS-sOSIj7mU=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/UG0UgzGrb1avf+oJGM7BM+S8wwiT50aaeQ1fweK9hJY=/60.1717719901670.C3rtDYiYJ5I-rZi7Dp+bd-hE2qjfhXLvON893BVhb5Y=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/VbyS17gnPnTZxRJqpWxaqyESPRm-upuJOXv3cQ-MHfc=/60.1718008038857.C3rtDYiYJ5I-rZi7Dp+bd-hE2qjfhXLvON893BVhb5Y=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/YgzJz6j7ELfkJzHM9hEAjL92hsa5hFmc3CNX9IEQ8sQ=/60.1718008073958.Q-A64KmEKxLsk2BOQjyLOKToWosP9gLO5RY1WKGuReY=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/ZV0vvCv7-aDGDm49-9FxJYale4bJ8NWfaBRO58nrmHI=/60.1718008047043.-yy5CMDLqU1TbYVhz5wf8GaqXIwMeJjRaDVv0jkE0LA=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/cVxuZKjkPLnaf9HKxZ8U616JgFyA6kyUdvG5wONC2cU=/60.1717719903295.859xA7N+qOdHajAQQLDUANPW4b-Gh-ajiVlMcJXWFjg=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/dsCmkqEqL+ndxl4c9Vg55t7Col40ArKNhK7QWcqQg7I=/60.1717745886565.859xA7N+qOdHajAQQLDUANPW4b-Gh-ajiVlMcJXWFjg=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/fUuIOQQJU3dQ0YeljvEjlOG4pecoxhOTcri8evcyvrg=/60.1717745886516.bhsEpfOTJ2NLlaxV3Cb-TFb5Lx+GSUkqMA1ynE28OWw=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/hj4sSe8H+KtPsyY1F-a4uoA50LNJdQjulFtSvmauohQ=/60.1717749592238.C3rtDYiYJ5I-rZi7Dp+bd-hE2qjfhXLvON893BVhb5Y=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/iIfqqZQgmredt3nSibAMUEDjbFHngiUK7kvf6ukmQI0=/60.1717986842769.ZLL7B8elGf+in8EHFecvMQ99SBdeYU+siyIzh43-EPs=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/mU0j8NaPE8-12VBLcIG+cT7HFa+obXxYgFkW3SjuGho=/60.1718008074013.l6+MmUSdgFD2G2Bm1FeM6N11cUA-bhbW+a6zmyNBBnk=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/nWfZzAqgPl6lcKcYZLAmKoHF9cWlU8-MNmI66knXsNg=/60.1718008047045.SCi8CcmlnzYlSRbxVYJGMon9oLuK+2u42AlsWM9KYSo=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/nsBimbPHzr0YtW+ZpcR9NbvyL2kSg-oeBC9BfyJKRvA=/60.1717749592236.aYGx+gluxNBeXwSC6F4-H6hOIA1i8BKtHPx0oua126k=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/tvBg1zt63SDGO2O8rej9qFuUMOgts1UTgYDDeH-D8zc=/60.1717719903230.bhsEpfOTJ2NLlaxV3Cb-TFb5Lx+GSUkqMA1ynE28OWw=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/v5MDZYAQxzNAGbpi9fzHWkIGBm2n5dv638v6kRceOhc=/60.1717986841698.WwT-EkLnT3ZjNDjPE-6pXlAIkbtPi7ue1KOFU5hxoN0=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/images/wA2MarWquXoXitRDoQpW6zRcnmnU69o5qrX0TYB+GIg=/60.1717986843386.qRq8VN5Wl5cq-Vye6pSZH9Vc3KhYQO862q-AjSSrU4o=.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/client-production/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/client-production/0.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/client-production/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/client-production/1.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/client-production/10.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/client-production/10.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/client-production/11.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/client-production/11.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/client-production/12.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/client-production/12.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/client-production/15.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/client-production/15.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/client-production/16.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/client-production/16.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/client-production/17.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/client-production/17.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/client-production/18.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/client-production/18.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/client-production/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/client-production/2.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/client-production/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/client-production/3.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/client-production/4.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/client-production/4.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/client-production/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/client-production/5.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/client-production/7.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/client-production/7.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/client-production/8.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/client-production/8.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/client-production/9.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/client-production/9.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/client-production/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/client-production/index.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/client-production/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/client-production/index.pack.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/server-production/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/server-production/0.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/server-production/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/server-production/1.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/server-production/12.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/server-production/12.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/server-production/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/server-production/3.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/server-production/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/server-production/5.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/server-production/6.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/server-production/6.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/server-production/7.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/server-production/7.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/server-production/8.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/server-production/8.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/server-production/9.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/server-production/9.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/server-production/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/server-production/index.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/server-production/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/server-production/index.pack.old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/next-minimal-server.js.nft.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/next-minimal-server.js.nft.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/next-server.js.nft.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/next-server.js.nft.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/prerender-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/prerender-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/routes-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/routes-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/middleware-build-manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/middleware-build-manifest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/pages-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/pages/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/pages/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/pages/500.html" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/pages/500.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/pages/Be.html" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/pages/Be.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/pages/Detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/pages/Detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/pages/Find.html" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/pages/Find.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/pages/FindVolunteer.html" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/pages/FindVolunteer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/pages/First.html" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/pages/First.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/pages/Join.html" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/pages/Join.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/pages/Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/pages/Login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/pages/Mentor.html" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/pages/Mentor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/pages/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/server-reference-manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/server-reference-manifest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/server-reference-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/server-reference-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/webpack-runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/webpack-runtime.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/ZvCGQulkK3v_kz4jxdF7P/_buildManifest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/ZvCGQulkK3v_kz4jxdF7P/_ssgManifest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/chunks/66-fc7fc3d65fdd700c.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/chunks/873-7850c06d13c0f58d.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/chunks/894-a90f30059fa3fb92.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/chunks/framework-d768728cf5cbcf7a.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/chunks/main-7e882423f58b3163.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/chunks/pages/Be-2bf4643a81d03db9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/chunks/pages/Detail-a2f78bb0e13c1c24.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/chunks/pages/Find-3d11c08749bc2261.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/chunks/pages/FindVolunteer-3b73720fbc23fd11.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/chunks/pages/First-ac925fa8f26888bb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/chunks/pages/Join-6d51bfe7549ac67c.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/chunks/pages/Login-c69ee87a75dc1d99.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/chunks/pages/Mentor-ecfae59e4804923f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/chunks/pages/index-cc60a81a1ac66a6e.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/css/74390209cfaf80ec.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/css/85d537859301f368.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/required-server-files.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/required-server-files.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/trace" beforeDir="false" afterPath="$PROJECT_DIR$/.next/trace" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Detail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Detail.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/First.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/First.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Mentor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Mentor.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/Detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Detail.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/First.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/First.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Be.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Be.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/api/chat/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/api/socket/io.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +63,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/bagsuyeon/Desktop/final/node_modules/typescript/lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/bagsuyeon/Desktop/together_FE-main/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -259,6 +158,8 @@
       <workItem from="1717996597317" duration="8041000" />
       <workItem from="1718008314904" duration="974000" />
       <workItem from="1718027224651" duration="14580000" />
+      <workItem from="1718423154660" duration="2353000" />
+      <workItem from="1718431030593" duration="151000" />
     </task>
     <servers />
   </component>

@@ -115,8 +115,10 @@ const Be = () => {
                             onChange={handlePhotoChange}
                         />
                     </div>
+                    <div>
                     <button className={styles.button} type="submit">등록하기</button>
                     <button className={styles.goBackButton} onClick={handleGoBack}>뒤로가기</button>
+                    </div>
                 </form>
                 <footer className="footer">
                     <div className="footer-icon" onClick={handleSettingsClick}>=</div>
