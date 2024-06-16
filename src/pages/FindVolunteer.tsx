@@ -4,7 +4,7 @@ import Slider from 'react-slick';
 import { useRouter } from 'next/router';
 import '../styles/Volunteer.css';
 
-export interface Activity {
+interface Activity {
     id: number;
     title: string;
     description: string;
@@ -15,8 +15,7 @@ const FindVolunteer: React.FC = () => {
     const router = useRouter();
     const [isSidebarOpen, setSidebarOpen] = useState(false);
     const sidebarRef = useRef<HTMLDivElement>(null);
-
-    const [activities, setActivities] = useState<Activity[]>([
+    const activities: Activity[] = [
         {
             id: 1,
             title: '어르신 돌봄 봉사',
@@ -35,7 +34,7 @@ const FindVolunteer: React.FC = () => {
             description: '관람의 어려움을 느끼지 않도록 보조',
             image: '/images/disable.png'
         }
-    ]);
+    ];
 
     const handleActivityClick = (activityId: number) => {
         router.push(`/Detail?id=${activityId}`);
@@ -50,7 +49,7 @@ const FindVolunteer: React.FC = () => {
     };
 
     const handleProfileClick = () => {
-        router.push('/Profile');
+        router.push('/Mypage');
     };
 
     const handleSettingsClick = () => {
@@ -108,9 +107,10 @@ const FindVolunteer: React.FC = () => {
             </div>
 
             <main className="activities-container">
+                <button className="register-button" onClick={() => router.push('/register')}>봉사 등록</button>
                 {activities.map(activity => (
                     <div className="activity" key={activity.id} onClick={() => handleActivityClick(activity.id)}>
-                        <Image src={activity.image} alt={activity.title} width={100} height={100} />
+                        <Image src={activity.image} alt={activity.title} width={100} height={100}/>
                         <div className="activity-content">
                             <h3>{activity.title}</h3>
                             <p>{activity.description}</p>

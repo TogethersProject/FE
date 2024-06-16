@@ -1,7 +1,7 @@
-import { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/router';
-import '../styles/Find.css';
 import Image from 'next/image';
+import '../styles/Find.css';
 
 interface Mentor {
     name: string;
@@ -23,15 +23,10 @@ const Find = () => {
         setMentors(savedData);
     }, []);
 
-    const handleBack = () => {
-        router.push('/Be');
-    };
-
-    const handleCommentChange = (e: React.ChangeEvent<HTMLInputElement>, index: number) => {
-        const updatedMentors = [...mentors];
-        updatedMentors[index].comments = updatedMentors[index].comments || [];
-        updatedMentors[index].comments.push(e.target.value);
+    const handleDeleteMentor = (index: number) => {
+        const updatedMentors = mentors.filter((_, i) => i !== index);
         setMentors(updatedMentors);
+        localStorage.setItem('mentors', JSON.stringify(updatedMentors));
     };
 
     const handleAddComment = (index: number) => {
@@ -42,22 +37,16 @@ const Find = () => {
         localStorage.setItem('mentors', JSON.stringify(updatedMentors));
     };
 
-    const handleDeleteMentor = (index: number) => {
-        const updatedMentors = mentors.filter((_, i) => i !== index);
-        setMentors(updatedMentors);
-        localStorage.setItem('mentors', JSON.stringify(updatedMentors));
-    };
-
     const handleFirstImageClick = () => {
         router.push('/First');
     };
 
     const handleHomeClick = () => {
-        router.push('/Mentor');
+        router.push('/First');
     };
 
     const handleProfileClick = () => {
-        router.push('/Profile');
+        router.push('/Mypage');
     };
 
     const handleSettingsClick = () => {
@@ -91,7 +80,7 @@ const Find = () => {
                 <Image src="/images/alert.png" alt="alert" className="alert-icon" width={50} height={50} />
             </div>
             <div className="container">
-                <h1 className="title">멘토 정보</h1>
+                <h1 className="title">등록된 멘토 정보</h1>
                 {mentors.map((mentor, index) => (
                     <div key={index} className="info">
                         <p><strong>이름:</strong> {mentor.name}</p>

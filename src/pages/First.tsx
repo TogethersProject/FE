@@ -20,8 +20,11 @@ const First: React.FC = () => {
     };
 
     const handleProfileClick = () => {
-        router.push('/Profile');
+        router.push('/Mypage');
     };
+    const handleLoginClick =() => {
+        router.push('/Login')
+    }
 
     const handleSettingsClick = () => {
         setSidebarOpen(!isSidebarOpen);
@@ -69,6 +72,9 @@ const First: React.FC = () => {
                 <div className="activity-card" id="Mentor" onClick={handleMentorClick}>
                     <h2>저소득층 학생 대상 멘토링</h2>
                     <p>우리의 희망에게 멘토가 되어주세요.</p>
+                </div>
+                <div className="activity-card" id="Login" onClick={handleLoginClick}>
+                    <h2>로그인 및 회원가입</h2>
                 </div>
             </div>
             <footer className="footer">

@@ -30,14 +30,17 @@ const Login: React.FC = () => {
     };
 
     const handleLoginSubmit = () => {
+        const username = (document.getElementById('user-signin') as HTMLInputElement).value;
         setIsLoggedIn(true);
         localStorage.setItem('isLoggedIn', 'true');
-        router.push('/dashboard');
+        localStorage.setItem('username', username); // Save username
+        router.push('/Mypage');
     };
 
     const handleLogout = () => {
         setIsLoggedIn(false);
         localStorage.setItem('isLoggedIn', 'false');
+        localStorage.removeItem('username'); // Remove username
     };
 
     const handleHomeClick = () => {
@@ -64,8 +67,10 @@ const Login: React.FC = () => {
     };
 
     const handleSignUpSubmit = () => {
+        const username = (document.getElementById('name') as HTMLInputElement).value;
         setIsLoggedIn(true);
         localStorage.setItem('isLoggedIn', 'true');
+        localStorage.setItem('username', username); // Save username
         router.push('/dashboard');
     };
 
@@ -74,7 +79,7 @@ const Login: React.FC = () => {
             <div className={`sidebar ${isSidebarOpen ? 'open' : 'closed'}`} ref={sidebarRef}>
                 <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/Search')}>Search</div>
                 <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/Login')}>Login</div>
-                <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/My')}>My</div>
+                <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/Mypage')}>My</div>
                 <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/Chat')}>ChatBot</div>
             </div>
             <div className="body-wrapper">
@@ -217,17 +222,17 @@ const Login: React.FC = () => {
                         </div>
                     </div>
                 </div>
-            <footer className="footer">
-                <div className="footer-icon" onClick={handleSettingsClick}>
-                    =
-                </div>
-                <div className="footer-icon" onClick={handleHomeClick}>
-                    🏠
-                </div>
-                <div className="footer-icon" onClick={handleProfileClick}>
-                    👤
-                </div>
-            </footer>
+                <footer className="footer">
+                    <div className="footer-icon" onClick={handleSettingsClick}>
+                        =
+                    </div>
+                    <div className="footer-icon" onClick={handleHomeClick}>
+                        🏠
+                    </div>
+                    <div className="footer-icon" onClick={handleProfileClick}>
+                        👤
+                    </div>
+                </footer>
             </div>
         </div>
     );

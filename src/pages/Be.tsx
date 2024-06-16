@@ -21,7 +21,10 @@ const Be = () => {
             const photoUrl = reader.result as string;
             const newMentor = { name, email, bio, photo: photoUrl };
 
-            const savedData = JSON.parse(localStorage.getItem('mentors') || '[]');
+            let savedData = JSON.parse(localStorage.getItem('mentors') || '[]');
+            if (!Array.isArray(savedData)) {
+                savedData = [];
+            }
             savedData.push(newMentor);
             localStorage.setItem('mentors', JSON.stringify(savedData));
 
@@ -35,7 +38,11 @@ const Be = () => {
             reader.readAsDataURL(photo);
         } else {
             const newMentor = { name, email, bio, photo: null };
-            const savedData = JSON.parse(localStorage.getItem('mentors') || '[]');
+
+            let savedData = JSON.parse(localStorage.getItem('mentors') || '[]');
+            if (!Array.isArray(savedData)) {
+                savedData = [];
+            }
             savedData.push(newMentor);
             localStorage.setItem('mentors', JSON.stringify(savedData));
 
@@ -95,7 +102,8 @@ const Be = () => {
                 </div>
                 <div className="header">
                     <Image src="/images/image-23.png" alt="search" width={40} height={40}/>
-                    <div className="center-image-container" onClick={handleFirstImageClick} style={{cursor: 'pointer'}}>
+                    <div className="center-image-container" onClick={handleFirstImageClick}
+                         style={{cursor: 'pointer'}}>
                         <Image className="center-image" src="/images/first.png" alt="투게더!" width={120} height={45}/>
                     </div>
                     <Image src="/images/alert.png" alt="alert" className="alert-icon" width={50} height={50}/>
@@ -147,7 +155,6 @@ const Be = () => {
                         </div>
                         <div className="buttonContainer">
                             <button className="button" type="submit">등록하기</button>
-                            <button className="goBackButton" onClick={handleGoBack}>뒤로가기</button>
                         </div>
                     </form>
                 </main>

@@ -81,7 +81,7 @@ body {
 .activity-card {
     width:280px;
     max-width: 280px;
-    background-color: #ffffff;
+    background-color: peachpuff;
     border-radius: 12px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -102,7 +102,7 @@ body {
 
 .activity-card p {
     font-size: 13px;
-    color: #666666;
+    color: snow;
 }
 
 .footer {
