@@ -97,7 +97,7 @@ const Be = () => {
                 <div className={`sidebar ${isSidebarOpen ? 'open' : 'closed'}`} ref={sidebarRef}>
                     <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/Search')}>Search</div>
                     <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/Login')}>Login</div>
-                    <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/My')}>My</div>
+                    <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/Mypage')}>My</div>
                     <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/Chat')}>ChatBot</div>
                 </div>
                 <div className="header">

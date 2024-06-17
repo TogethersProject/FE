@@ -129,6 +129,7 @@ const Detail: React.FC = () => {
         router.push('/Profile'); // Profile 페이지로 이동
     };
 
+
     // 활동 정보가 없는 경우
     if (!activity) {
         return <div>봉사활동을 찾을 수 없습니다.</div>;
@@ -140,7 +141,7 @@ const Detail: React.FC = () => {
             <div className={`sidebar ${isSidebarOpen ? 'open' : 'closed'}`} ref={sidebarRef}>
                 <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/Search')}>Search</div>
                 <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/Login')}>Login</div>
-                <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/My')}>My</div>
+                <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/Mypage')}>My</div>
                 <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/Chat')}>ChatBot</div>
             </div>
             <div className="header">

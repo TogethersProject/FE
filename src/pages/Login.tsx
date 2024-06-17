@@ -12,6 +12,11 @@ const Login: React.FC = () => {
     const sidebarRef = useRef<HTMLDivElement>(null);
     const [isSidebarOpen, setSidebarOpen] = useState(false);
     const router = useRouter();
+    const [codeStatus, setCodeStatus] = useState(false); // null, 'correct', or 'incorrect'
+
+    // State for email verification
+    const [isVerified, setIsVerified] = useState(false);
+    const [verificationCode, setVerificationCode] = useState('');
 
     useEffect(() => {
         const storedLoginStatus = localStorage.getItem('isLoggedIn');
@@ -71,7 +76,27 @@ const Login: React.FC = () => {
         setIsLoggedIn(true);
         localStorage.setItem('isLoggedIn', 'true');
         localStorage.setItem('username', username); // Save username
-        router.push('/dashboard');
+        router.push('/First');
+    };
+
+    // Handle email verification
+    const handleVerifyClick = () => {
+        // Logic to send verification code to the email
+        setIsVerified(true);
+    };
+
+    const handleCodeChange = (e) => {
+        setVerificationCode(e.target.value);
+    };
+    const handleCodeSubmit = () => {
+        // 백엔드와 통신하여 입력한 인증 번호가 맞는지 확인
+        const isCodeCorrect = verificationCode === '123456'; // 백엔드에서 받은 코드와 비교
+
+        if (isCodeCorrect) {
+            setCodeStatus(true);
+        } else {
+            setCodeStatus(false);
+        }
     };
 
     return (
@@ -108,7 +133,8 @@ const Login: React.FC = () => {
                             회원가입
                         </label>
                         <div className="login-form">
-                            <div className="sign-in-html" style={{ transform: tab === 'sign-in' ? 'rotateY(0deg)' : 'rotateY(-180deg)' }}>
+                            <div className="sign-in-html"
+                                 style={{transform: tab === 'sign-in' ? 'rotateY(0deg)' : 'rotateY(-180deg)'}}>
                                 <div className="group">
                                     <label htmlFor="user-signin" className="label">
                                         아이디
@@ -125,6 +151,8 @@ const Login: React.FC = () => {
                                         className="input"
                                         data-type="password"
                                     />
+                                </div>
+                                <div className="group">
                                     <input
                                         type="button"
                                         className="button"
@@ -136,8 +164,21 @@ const Login: React.FC = () => {
                                 <div className="foot-lnk">
                                     <a href="#">비밀번호 찾기</a>
                                 </div>
+
+                                <div className="social-login">
+                                    <a href="#" className="social-btn">
+                                        <img src="/images/naver-logo.webp" alt="네이버 로그인" className="social-logo"/>
+                                    </a>
+                                    <a href="#" className="social-btn">
+                                        <img src="/images/kakao-logo.webp" alt="카카오 로그인" className="social-logo"/>
+                                    </a>
+                                    <a href="#" className="social-btn">
+                                        <img src="/images/google-logo.png" alt="구글 로그인" className="social-logo"/>
+                                    </a>
+                                </div>
                             </div>
-                            <div className="sign-up-html" style={{ transform: tab === 'sign-up' ? 'rotateY(0deg)' : 'rotateY(180deg)' }}>
+                            <div className="sign-up-html"
+                                 style={{transform: tab === 'sign-up' ? 'rotateY(0deg)' : 'rotateY(180deg)'}}>
                                 <div className="group">
                                     <label htmlFor="user-signup" className="label">
                                         아이디
@@ -149,6 +190,28 @@ const Login: React.FC = () => {
                                         이메일
                                     </label>
                                     <input id="email-signup" type="email" className="input"/>
+                                    <button type="button" onClick={handleVerifyClick}>
+                                        인증하기
+                                    </button>
+                                    {isVerified && (
+                                        <div className="verification-group">
+                                            <label htmlFor="verification-code" className="label">
+                                                인증번호를 입력하세요
+                                            </label>
+                                            <input
+                                                id="verification-code"
+                                                type="text"
+                                                className="input"
+                                                value={verificationCode}
+                                                onChange={handleCodeChange}
+                                            />
+                                            <button type="button" onClick={handleCodeSubmit}>
+                                                확인
+                                            </button>
+                                            {codeStatus === true && <span className="correct">✔️</span>}
+                                            {codeStatus === false && <span className="incorrect">❌</span>}
+                                        </div>
+                                    )}
                                 </div>
                                 <div className="group">
                                     <label htmlFor="pass-signup" className="label">

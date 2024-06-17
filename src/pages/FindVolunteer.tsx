@@ -82,7 +82,7 @@ const FindVolunteer: React.FC = () => {
             <div className={`sidebar ${isSidebarOpen ? 'open' : 'closed'}`} ref={sidebarRef}>
                 <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/Search')}>Search</div>
                 <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/Login')}>Login</div>
-                <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/My')}>My</div>
+                <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/Mypage')}>My</div>
                 <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/Chat')}>ChatBot</div>
             </div>
             <div className="header">
@@ -107,7 +107,7 @@ const FindVolunteer: React.FC = () => {
             </div>
 
             <main className="activities-container">
-                <button className="register-button" onClick={() => router.push('/register')}>봉사 등록</button>
+                <button className="register-button" onClick={() => router.push('/Register')}>봉사 등록</button>
                 {activities.map(activity => (
                     <div className="activity" key={activity.id} onClick={() => handleActivityClick(activity.id)}>
                         <Image src={activity.image} alt={activity.title} width={100} height={100}/>

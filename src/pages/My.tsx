@@ -10,7 +10,11 @@ const My: React.FC = () => {
     const [email, setEmail] = useState('');
     const [address, setAddress] = useState('');
     const [detailAddress, setDetailAddress] = useState('');
+    const [currentPassword, setCurrentPassword] = useState('');
+    const [newPassword, setNewPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
     const [showModal, setShowModal] = useState(false);
+    const [showPasswordMismatch, setShowPasswordMismatch] = useState(false);
 
     useEffect(() => {
         const storedUsername = localStorage.getItem('username');
@@ -49,6 +53,10 @@ const My: React.FC = () => {
         router.push('/First');
     };
 
+    const handleFirstImageClick = () => {
+        router.push('/First');
+    };
+
     const handleProfileClick = () => {
         router.push('/Mypage');
     };
@@ -69,6 +77,39 @@ const My: React.FC = () => {
         }
     };
 
+    const handleChangePassword = () => {
+        // 클라이언트 측 간단한 유효성 검사
+        if (currentPassword === '') {
+            alert('현재 비밀번호를 입력해주세요.');
+            return;
+        }
+        if (newPassword === '') {
+            alert('새로운 비밀번호를 입력해주세요.');
+            return;
+        }
+        if (newPassword.length < 8) {
+            alert('새로운 비밀번호는 최소 8자 이상이어야 합니다.');
+            return;
+        }
+        if (newPassword !== confirmPassword) {
+            alert('새로운 비밀번호와 확인용 비밀번호가 일치하지 않습니다.');
+            return;
+        }
+
+        // 실제 비밀번호 변경 로직 추가
+        if (newPassword === confirmPassword) {
+            // 여기에 서버와의 통신을 통한 비밀번호 변경 로직을 추가할 수 있습니다.
+            setShowPasswordMismatch(false);
+            setShowModal(true); // 변경 완료 메시지 표시
+            setTimeout(() => {
+                setShowModal(false);
+                // 비밀번호 변경 후 필요한 처리 (예: 로그아웃, 다른 페이지로 이동 등)
+            }, 1000);
+        } else {
+            setShowPasswordMismatch(true);
+        }
+    };
+
     return (
         <div
             className={`main-screen ${isSidebarOpen ? 'sidebar-open' : ''}`}
@@ -77,15 +118,15 @@ const My: React.FC = () => {
             <div className="sidebar">
                 <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/Search')}>Search</div>
                 <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/Login')}>Login</div>
-                <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/My')}>My</div>
+                <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/Mypage')}>My</div>
                 <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/Chat')}>ChatBot</div>
             </div>
             <header className="header">
-                <Image src="/images/image-23.png" alt="search" width={40} height={40} />
-                <div className="center-image-container">
-                    <Image src="/images/first.png" alt="First Image" width={120} height={45} />
+                <Image src="/images/image-23.png" alt="search" width={40} height={40}/>
+                <div className="center-image-container" onClick={handleFirstImageClick} style={{cursor: 'pointer'}}>
+                    <Image className="center-image" src="/images/first.png" alt="투게더!" width={120} height={45}/>
                 </div>
-                <Image src="/images/alert.png" alt="alert" className="alert-icon" width={50} height={50} />
+                <Image src="/images/alert.png" alt="alert" className="alert-icon" width={50} height={50}/>
             </header>
             <div className="content">
                 <div className="intro">
@@ -127,11 +168,39 @@ const My: React.FC = () => {
                         onChange={(e) => setDetailAddress(e.target.value)}
                     />
                 </div>
+                <div className="form-group">
+                    <label htmlFor="currentPassword">현재 비밀번호</label>
+                    <input
+                        type="password"
+                        id="currentPassword"
+                        value={currentPassword}
+                        onChange={(e) => setCurrentPassword(e.target.value)}
+                    />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="newPassword">새로운 비밀번호</label>
+                    <input
+                        type="password"
+                        id="newPassword"
+                        value={newPassword}
+                        onChange={(e) => setNewPassword(e.target.value)}
+                    />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="confirmPassword">비밀번호 확인</label>
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        value={confirmPassword}
+                        onChange={(e) => setConfirmPassword(e.target.value)}
+                    />
+                </div>
+                {showPasswordMismatch && <p className="error-message">새로운 비밀번호와 확인용 비밀번호가 일치하지 않습니다.</p>}
+                <button onClick={handleChangePassword}>비밀번호 변경</button>
                 <button onClick={handleSave}>저장</button>
                 <button onClick={handleLogout} className="logout-button">로그아웃</button>
             </div>
-            {showModal && (
-                <div className="modal">
+            {showModal && (<div className="modal">
                     <div className="modal-content">
                         정보가 저장되었습니다.
                     </div>
@@ -147,3 +216,5 @@ const My: React.FC = () => {
 };
 
 export default My;
+
+

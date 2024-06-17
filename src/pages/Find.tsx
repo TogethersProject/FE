@@ -13,7 +13,7 @@ interface Mentor {
 
 const Find = () => {
     const [mentors, setMentors] = useState<Mentor[]>([]);
-    const [currentComment, setCurrentComment] = useState<string>('');
+    const [currentComments, setCurrentComments] = useState<string[]>([]);
     const [isSidebarOpen, setSidebarOpen] = useState(false);
     const sidebarRef = useRef<HTMLDivElement>(null);
     const router = useRouter();
@@ -21,20 +21,27 @@ const Find = () => {
     useEffect(() => {
         const savedData = JSON.parse(localStorage.getItem('mentors') || '[]');
         setMentors(savedData);
+        setCurrentComments(savedData.map(() => '')); // Initialize currentComments state for each mentor
     }, []);
 
     const handleDeleteMentor = (index: number) => {
         const updatedMentors = mentors.filter((_, i) => i !== index);
         setMentors(updatedMentors);
+        setCurrentComments(updatedMentors.map(() => ''));
         localStorage.setItem('mentors', JSON.stringify(updatedMentors));
     };
 
     const handleAddComment = (index: number) => {
         const updatedMentors = [...mentors];
-        updatedMentors[index].comments = [...(updatedMentors[index].comments || []), currentComment];
-        setMentors(updatedMentors);
-        setCurrentComment('');
-        localStorage.setItem('mentors', JSON.stringify(updatedMentors));
+        if (currentComments[index]) {
+            if (!updatedMentors[index].comments) {
+                updatedMentors[index].comments = [];
+            }
+            updatedMentors[index].comments.push(currentComments[index]);
+            setMentors(updatedMentors);
+            setCurrentComments(updatedMentors.map(() => ''));
+            localStorage.setItem('mentors', JSON.stringify(updatedMentors));
+        }
     };
 
     const handleFirstImageClick = () => {
@@ -69,7 +76,7 @@ const Find = () => {
             <div className={`sidebar ${isSidebarOpen ? 'open' : 'closed'}`} ref={sidebarRef}>
                 <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/Search')}>Search</div>
                 <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/Login')}>Login</div>
-                <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/My')}>My</div>
+                <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/Mypage')}>My</div>
                 <div className="sidebar-link" onClick={() => handleSidebarLinkClick('/Chat')}>ChatBot</div>
             </div>
             <div className="header">
@@ -91,24 +98,32 @@ const Find = () => {
                                 <Image src={mentor.photo} alt="Photo" width={100} height={100} />
                             </div>
                         ) : (
-                            <p>No Photo Available</p>
+                            <p>사진 없음</p>
                         )}
                         <div className="comments">
                             <h3>댓글:</h3>
-                            {mentor.comments.map((comment, commentIndex) => (
-                                <div key={commentIndex} className="commentContainer">
-                                    <p>{comment}</p>
-                                </div>
-                            ))}
+                            {mentor.comments && mentor.comments.length > 0 ? (
+                                mentor.comments.map((comment, commentIndex) => (
+                                    <div key={commentIndex} className="commentContainer">
+                                        <p>{comment}</p>
+                                    </div>
+                                ))
+                            ) : (
+                                <p>댓글이 없습니다</p>
+                            )}
                             <input
                                 type="text"
-                                value={currentComment}
-                                onChange={(e) => setCurrentComment(e.target.value)}
+                                value={currentComments[index] || ''}
+                                onChange={(e) => {
+                                    const newComments = [...currentComments];
+                                    newComments[index] = e.target.value;
+                                    setCurrentComments(newComments);
+                                }}
                                 placeholder="댓글을 입력하세요"
                             />
                             <button onClick={() => handleAddComment(index)}>댓글 달기</button>
                         </div>
-                        <button onClick={() => handleDeleteMentor(index)}>글 삭제</button>
+                        <button onClick={() => handleDeleteMentor(index)}>멘토 삭제</button>
                     </div>
                 ))}
             </div>
